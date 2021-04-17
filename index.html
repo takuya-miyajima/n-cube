@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>n-cube</title>
+  <!--キャンバスの背景色／枠線を指定（3）-->
+  <style>
+    #cv {
+      background-color: #FFF;
+      border: 1px solid black;
+    }
+  </style>
+  <script src="./jquery-3.3.1.min.js"></script>
+  <script src="./n-cube.js"></script>
+</head>
+
+<body>
+  <div>
+    <span>次元 : &nbsp;<input type="number" id="dimension" value="3" /></span>
+    <!-- <span><button id="update" type="button">更新</button></span> -->
+    <span id="error">正の整数を指定してください！</span>
+  </div>
+  <!--キャンバスの準備（1）-->
+  <canvas id="cv" width="1600" height="1200">
+    <!--Canvas機能に対応していないブラウザへの備え（2）-->
+    Canvas機能に対応したブラウザでアクセスしてください。
+  </canvas>
+</body>
+
+</html>
